@@ -23,6 +23,7 @@ public class BeeControl : MonoBehaviour
     private int timePlay;
     private Rigidbody2D rb2D;
     private AudioSource audioSource;
+    private GameObject[] collectibles;
 
     void Start()
     {
@@ -42,7 +43,6 @@ public class BeeControl : MonoBehaviour
     {
         timeTotal += Time.deltaTime;
         timeSec = Mathf.FloorToInt(timeTotal);
-        // Debug.Log(Mathf.FloorToInt(timeTotal)); // Remove Later
         if (timeSec < 2 || timeSec > 12)
         {
             bckgMusic.SetActive(false);
@@ -70,6 +70,11 @@ public class BeeControl : MonoBehaviour
 
         if (timePlay <= 0 && speedApplied == 0)
         {
+            collectibles = GameObject.FindGameObjectsWithTag("Collectible");
+            foreach (GameObject honey in collectibles )
+            {
+                honey.SetActive(false);
+            }
             if (score != scoreTotal)
             {
                 endLose.SetActive(true);
@@ -98,7 +103,7 @@ public class BeeControl : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Collectible") 
         {

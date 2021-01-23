@@ -95,7 +95,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.01, y: 0.045}
@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f6832d54a525d4bacbf95f4a1c1c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  honeyEffect: {fileID: 6594873721086030396, guid: dbe8d0e6a41451b469eb438f7e339ead, type: 3}
 --- !u!1001 &663729884767946608
 PrefabInstance:
   m_ObjectHideFlags: 0
