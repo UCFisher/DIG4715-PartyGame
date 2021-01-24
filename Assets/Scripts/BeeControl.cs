@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BeeControl : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 20.0f;
     public Text timer;
     public Text honey;
     public GameObject start;
@@ -24,6 +24,8 @@ public class BeeControl : MonoBehaviour
     private Rigidbody2D rb2D;
     private AudioSource audioSource;
     private GameObject[] collectibles;
+    private float vertical;
+    private float horizontal;
 
     void Start()
     {
@@ -50,10 +52,11 @@ public class BeeControl : MonoBehaviour
         }
         else
         {
+            speedApplied = speed;
+
             start.SetActive(false);
             bckgMusic.SetActive(true);
 
-            speedApplied = speed;
             if (timeSec > timePrev)
             {
                 timePrev = timeSec;
@@ -62,11 +65,9 @@ public class BeeControl : MonoBehaviour
             }
         }
 
-        float horizontal = Input.GetAxis("Horizontal") * speedApplied;
-        float vertical = Input.GetAxis("Vertical") * speedApplied;
+        horizontal = Input.GetAxis("Horizontal") * speedApplied;
+        vertical = Input.GetAxis("Vertical") * speedApplied;
 
-
-        rb2D.AddForce(new Vector2(horizontal, vertical));
 
         if (timePlay <= 0 && speedApplied == 0)
         {
@@ -101,6 +102,11 @@ public class BeeControl : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene(); 
             SceneManager.LoadScene(scene.name);
         }
+    }
+
+    void FixedUpdate()
+    {
+        rb2D.AddForce(new Vector2(horizontal, vertical));
     }
 
     void OnTriggerEnter2D(Collider2D collision)

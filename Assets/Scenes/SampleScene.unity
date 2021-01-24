@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1764706, g: 0.30588236, b: 0.54901963, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -368,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359083191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.092022106, y: -0.3003412, z: 10}
+  m_LocalPosition: {x: 0.092022106, y: -0.3003412, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 638881032}
@@ -504,12 +504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You''ve won!
-
-
-    Press Return to restart.
-
-    Press Esc to exit.'
+  m_Text: You've won!
 --- !u!222 &400062001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -540,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -597,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -714,7 +709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -775,7 +770,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -891693205
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 25984f2160894004c970e08acdac1eb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -796,7 +791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569643997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1945478615}
@@ -1087,7 +1082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1323,7 +1318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1695,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1803,13 +1798,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Unfortunately,
 
-    you lost.
-
-
-    Press Return to restart.
-
-    Press
-    Esc to exit.'
+    you lost.'
 --- !u!222 &1556154976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2009,7 +1998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1764706, g: 0.30588236, b: 0.54901963, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2250,7 +2239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2371,7 +2360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905323763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.092022106, y: -0.3003412, z: 10}
+  m_LocalPosition: {x: 0.092022106, y: -0.3003412, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 268148009}
@@ -2405,7 +2394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2491,7 +2480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.17292629, g: 0.30493975, b: 0.5471698, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2596,7 +2585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2742,7 +2731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085351841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.62, y: -3.44, z: 0}
+  m_LocalPosition: {x: -7.62, y: -3.44, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2781,7 +2770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58de938d0500e194aa0e85bcff9b5198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 20
   timer: {fileID: 1711923664}
   honey: {fileID: 31794885}
   start: {fileID: 976666146}
@@ -2907,7 +2896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8092541753641945144, guid: 0c9fc0059fb88e74081d244591918c54, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2970,7 +2959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8240860879408597397, guid: 0c1fee3cf9aef4342927f32e446a6841, type: 3}
       propertyPath: m_LocalRotation.x
